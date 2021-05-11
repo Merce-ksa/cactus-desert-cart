@@ -19,7 +19,8 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "expo start",
-    "test": "jest --watchAll --collect-coverage"
+    "test-watching": "jest --watchAll --collect-coverage",
+    "test": "jest"
   },
   "dependencies": {
     "@testing-library/react-native": "^7.2.0",
