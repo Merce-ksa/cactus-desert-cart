@@ -54,7 +54,7 @@ describe('Given a CartSummary component', () => {
       expect(getByTestId('title')).toHaveTextContent('Resumen de tu cesta');
 
       await waitFor(async () => {
-        expect(getByTestId('itemCount')).toHaveTextContent('1 productos');
+        expect(getByTestId('itemCount')).toHaveTextContent('2 productos');
       });
     });
 
