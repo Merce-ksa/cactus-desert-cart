@@ -2,6 +2,8 @@
 
 Shopping cart.
 
+![cactus-desert-cart](https://user-images.githubusercontent.com/61200707/117943401-61fecc80-b30c-11eb-846a-23a2cc9a532c.png)
+
 ## Dependencies
 
 This project is bootstrapped with React Native.
