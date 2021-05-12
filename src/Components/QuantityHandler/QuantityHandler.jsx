@@ -10,31 +10,31 @@ import {
 import {
   increaseQuantity, decreaseQuantity
 } from '../../redux/actions/cartActions';
-import CartStyles from '../CartSummary/CartSummaryStyles';
+import QuantityHandlerStyles from './QuantityHandlerStyle';
 
 function QuantityHandler({ productId, quantity, actions }) {
   return (
-    <View style={CartStyles.containerRow}>
+    <View style={QuantityHandlerStyles.containerRow}>
       <TouchableOpacity
         key="remove"
-        style={[CartStyles.quantityButton, CartStyles.removeButton]}
+        style={[QuantityHandlerStyles.quantityButton, QuantityHandlerStyles.removeButton]}
         onPress={() => {
           actions.decreaseQuantity(productId);
         }}
         testID={`removeButton-${productId}`}
       >
-        <Text style={CartStyles.textButton}>-</Text>
+        <Text style={QuantityHandlerStyles.textButton}>-</Text>
       </TouchableOpacity>
-      <Text style={CartStyles.quantity} testID={`productQuantity-${productId}`}>{`${quantity}`}</Text>
+      <Text style={QuantityHandlerStyles.quantity} testID={`productQuantity-${productId}`}>{`${quantity}`}</Text>
       <TouchableOpacity
         key="add"
-        style={[CartStyles.quantityButton, CartStyles.addButton]}
+        style={[QuantityHandlerStyles.quantityButton, QuantityHandlerStyles.addButton]}
         onPress={() => {
           actions.increaseQuantity(productId);
         }}
         testID={`addButton-${productId}`}
       >
-        <Text style={CartStyles.textButton}>+</Text>
+        <Text style={QuantityHandlerStyles.textButton}>+</Text>
       </TouchableOpacity>
     </View>
   );
