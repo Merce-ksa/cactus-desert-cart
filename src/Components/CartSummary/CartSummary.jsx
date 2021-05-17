@@ -37,7 +37,7 @@ function CartSummary({ cart, actions }) {
           {`${cart.totalProducts()} productos`}
         </Text>
       </View>
-      <ScrollView key="groupsContainer">
+      <ScrollView key="groupsContainer" style={CartStyles.groupsContainer}>
         {cart && cart.cartProducts.map((cartProduct) => (
           <View
             style={[CartStyles.containerRow, CartStyles.prodcutContainer]}

@@ -22,6 +22,9 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: variables.fontSize.big
   },
+  groupsContainer: {
+    minHeight: 300
+  },
   prodcutContainer: {
     marginTop: 10,
     paddingTop: 10,
